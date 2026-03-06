@@ -74,7 +74,7 @@ export default function Todos() {
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, x: -20 }}
-                    className="bg-secondary dark:bg-secondary/60 border border-line rounded-2xl p-4 flex items-center justify-between gap-3"
+                    className="bg-background dark:bg-secondary border border-line rounded-2xl p-4 flex items-center justify-between gap-3"
                   >
                     <div
                     

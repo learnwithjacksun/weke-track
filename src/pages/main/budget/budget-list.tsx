@@ -227,7 +227,7 @@ export default function BudgetList() {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="rounded-2xl border border-dashed border-line bg-secondary/50 dark:bg-secondary/30 p-8 text-center"
+                className="rounded-2xl border border-dashed border-line bg-background dark:bg-secondary/30 p-8 text-center"
               >
                 <p className="text-muted text-sm">No budget categories yet.</p>
                 <Link
@@ -263,7 +263,7 @@ export default function BudgetList() {
                       key={cat.id}
                       variants={item}
                       layout
-                      className="bg-secondary dark:bg-secondary/60 border border-line rounded-2xl p-4 hover:border-primary/30 transition-colors"
+                      className="bg-background dark:bg-secondary border border-line rounded-2xl p-4 hover:border-primary/30 transition-colors"
                     >
                       <button
                         type="button"

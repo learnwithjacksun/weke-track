@@ -61,6 +61,7 @@ export default function AddTodo() {
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             id="todo-title"
+            className="bg-background dark:bg-secondary"
           />
 
           <div className="space-y-2">
@@ -74,7 +75,7 @@ export default function AddTodo() {
                   className={`px-3 py-1.5 rounded-full text-sm font-medium border transition-colors ${
                     tag === t
                       ? "border-primary bg-primary/15 text-main"
-                      : "border-line bg-secondary text-muted hover:border-primary/50"
+                      : "border-line dark:bg-secondary bg-background text-muted hover:border-primary/50"
                   }`}
                 >
                   {t}
@@ -93,7 +94,7 @@ export default function AddTodo() {
             </button>
             <Link
               to="/todos"
-              className="btn rounded-xl px-5 py-3 text-sm font-medium border border-line bg-secondary text-main"
+              className="btn rounded-xl px-5 py-3 text-sm font-medium border border-line dark:bg-secondary bg-background text-main"
             >
               Cancel
             </Link>

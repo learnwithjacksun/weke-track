@@ -70,6 +70,7 @@ export default function AddBudget() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             id="category-name"
+            className="bg-background dark:bg-secondary"
           />
 
           <div className="space-y-2">
@@ -83,7 +84,7 @@ export default function AddBudget() {
                   className={`w-10 h-10 rounded-xl border text-lg flex items-center justify-center transition-colors ${
                     icon === opt.value
                       ? "border-primary bg-primary/15 text-main"
-                      : "border-line bg-secondary hover:border-primary/50"
+                      : "border-line dark:bg-secondary bg-background hover:border-primary/50"
                   }`}
                   title={opt.label}
                 >
@@ -103,6 +104,7 @@ export default function AddBudget() {
               setAllocatedAmount(e.target.value.replace(/\D/g, ""))
             }
             id="allocated-amount"
+            className="bg-background dark:bg-secondary"
           />
 
           <div className="flex gap-3 pt-2">
@@ -115,7 +117,7 @@ export default function AddBudget() {
             </button>
             <Link
               to="/budget"
-              className="btn rounded-xl px-5 py-3 text-sm font-medium border border-line bg-secondary text-main"
+              className="btn rounded-xl px-5 py-3 text-sm font-medium border border-line dark:bg-secondary bg-background text-main"
             >
               Cancel
             </Link>
