@@ -34,7 +34,7 @@ export default function Modal({ isOpen, onClose, children, title }: ModalProps) 
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 100 }}
-        className=" rounded-xl shadow-md bg-background w-[90%] max-w-[480px] mx-auto p-4 z-50"
+        className=" rounded-xl shadow-md bg-background dark:bg-secondary w-[90%] max-w-[480px] mx-auto p-4 z-50"
       >
         <div className="flex items-center justify-between mb-2">
           <h2 className="text-lg font-bold font-outfit">{title}</h2>
