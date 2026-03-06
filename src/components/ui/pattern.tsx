@@ -1,6 +1,6 @@
 export default function Pattern({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-[100dvh] w-full bg-background relative overflow-y-scroll">
+    <div className="min-h-[100dvh] w-full bg-background relative overflow-y-scroll hide-scrollbar">
       <div
         className="absolute inset-0 z-0"
         style={{

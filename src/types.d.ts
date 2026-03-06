@@ -41,3 +41,29 @@ interface SelectWithoutIconProps
     value: string;
   }[];
 }
+
+// Budget
+interface BudgetCategory {
+  id: string;
+  name: string;
+  icon: string;
+  allocatedAmount: number;
+  createdAt: number;
+}
+
+interface BudgetItem {
+  id: string;
+  categoryId: string;
+  amount: number;
+  note?: string;
+  createdAt: number;
+}
+
+// Todo
+interface Todo {
+  id: string;
+  title: string;
+  done: boolean;
+  tag?: string;
+  createdAt: number;
+}
