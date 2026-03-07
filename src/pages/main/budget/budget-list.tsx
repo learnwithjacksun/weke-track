@@ -189,13 +189,13 @@ export default function BudgetList() {
                     initial="hidden"
                     animate="show"
                     variants={container}
-                    className="grid grid-cols-1 sm:grid-cols-3 gap-3"
+                    className="grid grid-cols-2 sm:grid-cols-3 gap-3"
                 >
                     {summaryCards.map((card) => (
                         <motion.div
                             key={card.label}
                             variants={item}
-                            className={`rounded-2xl border p-4 ${card.color}`}
+                            className={`rounded-2xl border p-4 last:col-span-2 sm:last:col-span-1 ${card.color}`}
                         >
                             <div className="flex items-start justify-between">
                                 <div className="p-2 rounded-xl bg-background/60 dark:bg-background/40">
@@ -373,7 +373,7 @@ export default function BudgetList() {
                                                     onClick={() =>
                                                         setLogModal({ id: cat.id, name: cat.name })
                                                     }
-                                                    className="flex-1 btn rounded-xl px-3 py-2.5 text-sm font-medium gap-2 border border-line bg-background/50 hover:border-primary/50 text-main hover:text-primary transition-colors"
+                                                    className="flex-1 text-nowrap flex-nowrap btn rounded-xl px-3 py-2.5 text-sm font-medium gap-2 border border-line bg-background/50 hover:border-primary/50 text-main hover:text-primary transition-colors"
                                                 >
                                                     <AddCircle size={18} />
                                                     Log spending
@@ -391,7 +391,7 @@ export default function BudgetList() {
                                                         }
                                                     }
                                                     }
-                                                    className="flex-1 btn rounded-xl px-3 py-2.5 text-sm font-medium gap-2 border border-line bg-background/50 hover:border-rose-500/50 text-muted hover:text-rose-500 transition-colors"
+                                                    className="flex-1 text-nowrap flex-nowrap btn rounded-xl px-3 py-2.5 text-sm font-medium gap-2 border border-line bg-background/50 hover:border-rose-500/50 text-muted hover:text-rose-500 transition-colors"
                                                 >
                                                     <Trash size={18} />
                                                     Delete
